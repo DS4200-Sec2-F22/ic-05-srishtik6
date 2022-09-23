@@ -3,12 +3,25 @@
 
 <head>
     <meta charset=utf-8/>
+    <title>ic-02</title>
 </head>
 
 
 <body>
-
-
+    <h1>Intro to JavaScript</h1>
+    <button onclick="myFunction()">Click me!</button>
+    <script>
+    var clicks = 0;
+    function myFunction() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+    <p>No. of Clicks: <a id="clicks">0</a></p>
 </body>
+
+
+<h2>Acknowledgements</h2>
+<p>https://stackoverflow.com/questions/22402777/html-javascript-button-click-counter</p>
 
 </html>
